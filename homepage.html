@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Recipe Book</title>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <h1>Digital Recipe Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-recipe">Add Recipe</a></li>
+                <li><a href="#recipes-list">Recipes List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to Your Favorite Recipe Book!</h2>
+        <p>Discover, share, and enjoy a variety of delicious recipes from around the world. Whether you're a seasoned chef or a beginner, there's something for everyone!</p>
+    </section>
+
+    <!-- Recipe of the Day -->
+    <section id="recipe-of-the-day">
+        <h2>Recipe of the Day</h2>
+        <h3>Delicious Vegan Pasta</h3>
+        <p>A quick and easy vegan pasta recipe that is both healthy and delicious!</p>
+        <img src="vegan-pasta.jpg" alt="Delicious Vegan Pasta" width="300">
+        <p><a href="#full-recipe">View Full Recipe</a></p>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="featured-categories">
+        <h2>Featured Categories</h2>
+        <ul>
+            <li><a href="#vegan">Vegan</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#quick-meals">Quick Meals</a></li>
+            <li><a href="#healthy">Healthy</a></li>
+            <li><a href="#snacks">Snacks</a></li>
+        </ul>
+    </section>
+
+    <!-- Add Recipe Section -->
+    <section id="add-recipe">
+        <h2>Add a New Recipe</h2>
+        <form action="#" method="post">
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <label for="image-url">Image URL:</label><br>
+            <input type="url" id="image-url" name="image-url" required><br><br>
+            <input type="submit" value="Add Recipe">
+        </form>
+    </section>
+
+    <!-- Recipes List Section -->
+    <section id="recipes-list">
+        <h2>Recipes List</h2>
+        <table border="1">
+            <tr>
+                <th>Recipe Name</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>View Recipe</th>
+            </tr>
+            <tr>
+                <td>Delicious Vegan Pasta</td>
+                <td>A quick and easy vegan pasta recipe that is both healthy and delicious!</td>
+                <td><img src="vegan-pasta.jpg" alt="Delicious Vegan Pasta" width="100"></td>
+                <td><a href="#full-recipe">View Recipe</a></td>
+            </tr>
+            <!-- Additional recipes can be added here -->
+        </table>
+    </section>
+
+</body>
+</html>
+ 
