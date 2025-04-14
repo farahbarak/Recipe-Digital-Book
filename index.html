@@ -12,14 +12,28 @@
     <header>
         <h1>My Digital Recipe Book</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#add-recipe">Add Recipe</a></li>
-                <li><a href="#recipes-list">Recipes List</a></li>
-            </ul>
+    
+                <a href="index.html">Home</a>
+                <a href="add-recipe.html">Add Recipe</a>
+                <a href="recipes-list.html">Recipes List</a>
+
         </nav>
     </header>
-
+   <!-- CSS Styling -->
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
     <!-- Welcome Section -->
     <section id="welcome">
         <h2>Welcome to Your Favorite Recipe Book!</h2>
@@ -29,57 +43,26 @@
     <!-- Recipe of the Day -->
     <section id="recipe-of-the-day">
         <h2>Recipe of the Day</h2>
-        <h3>Delicious Vegan Soup </h3>
+        <b> Delicious Vegan Soup </b>
         <p>A quick and easy vegan Soup recipe that is both healthy and delicious!</p>
         <img src="Minestrone Soup with Pesto.jpg" alt="Delicious Vegan Soup" width="300">
-        <p><a href="#vegansoup">View Full Recipe</a></p>
+       <br>
+       <br>
+        <a href="viewfullrecipe.html">View Full Recipe</a>
     </section>
 
     <!-- Featured Categories -->
     <section id="featured-categories">
         <h2>Featured Categories</h2>
         <ul>
-            <li><a href="#vegan">Vegan</a></li>
-            <li><a href="#desserts">Desserts</a></li>
-            <li><a href="#quick-meals">Quick Meals</a></li>
-            <li><a href="#healthy">Healthy</a></li>
-            <li><a href="#snacks">Snacks</a></li>
+            <li><a href="vegan">Vegan</a></li>
+            <li><a href="desserts">Desserts</a></li>
+            <li><a href="quick-meals">Quick Meals</a></li>
+            <li><a href="healthy">Healthy</a></li>
+            <li><a href="snacks">Snacks</a></li>
         </ul>
     </section>
 
-    <!-- Add Recipe Section -->
-    <section id="add-recipe">
-        <h2>Add a New Recipe</h2>
-        <form action="#" method="post">
-            <label for="recipe-name">Recipe Name:</label><br>
-            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" required></textarea><br><br>
-            <label for="image-url">Image URL:</label><br>
-            <input type="url" id="image-url" name="image-url" required><br><br>
-            <input type="submit" value="Add Recipe">
-        </form>
-    </section>
-
-    <!-- Recipes List Section -->
-    <section id="recipes-list">
-        <h2>Recipes List</h2>
-        <table border="1">
-            <tr>
-                <th>Recipe Name</th>
-                <th>Description</th>
-                <th>Image</th>
-                <th>View Recipe</th>
-            </tr>
-            <tr>
-                <td>Delicious Vegan Soup</td>
-                <td>A quick and easy vegan pasta recipe that is both healthy and delicious!</td>
-                <td><img src="Minestrone Soup with Pesto.jpg" alt="Delicious Vegan Soup" width="100"></td>
-                <td><a href="#full-recipe">View Recipe</a></td>
-            </tr>
-            <!-- Additional recipes can be added here -->
-        </table>
-    </section>
 
 </body>
 </html>
