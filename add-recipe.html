@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farah's Digital Recipe Book</title>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <h1>My Digital Recipe Book</h1>
+        <nav>
+    
+                <a href="index.html">Home</a>
+                <a href="add-recipe.html">Add Recipe</a>
+                <a href="recipes-list.html">Recipes List</a>
+        </nav>
+    </header>
+  <!-- CSS Styling -->
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    nav {
+        margin-bottom: 20px;
+    }
+    nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: blue;
+    }
+</style>
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <h2>Welcome to Your Favorite Recipe Book!</h2>
+        <p>Discover, share, and enjoy a variety of delicious recipes from around the world. Whether you're a seasoned chef or a beginner, there's something for everyone!</p>
+    </section>
+
+    <!-- Add Recipe Section -->
+    <section id="add-recipe">
+        <h2>Add a New Recipe</h2>
+        <form>
+            <label for="recipe-name">Recipe Name:</label><br>
+            <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <label for="image-url">Image URL:</label><br>
+            <input type="url" id="image-url" name="image-url" required><br><br>
+            <input type="submit" value="Add Recipe">
+        </form>
+    </section>
+</body>
+</html>
